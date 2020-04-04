@@ -12,7 +12,7 @@ public class Bubble extends BaseSort{
         int length = array.length;
         for (int i = 0; i < length; i++) {
             boolean flag= true;
-            for (int j = 0; j < length  - i - 1; j ++) {
+            for (int j = 0; j < (length  - i - 1); j ++) {
                 if (less(array[j + 1], array[j])) {
                     exec(array, j , j + 1);
                     flag = false;
